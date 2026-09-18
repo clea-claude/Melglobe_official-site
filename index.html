@@ -5,30 +5,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>合同会社Melglobe | 公式コーポレートサイト</title>
-    <meta name="description" content="合同会社Melglobeの公式ウェブサイトです。温かで安心感のある民泊事業の運営と、清掃スタッフの採用情報を掲載しています。">
+    <meta name="description" content="合同会社Melglobeの公式サイト。民泊の運営、民泊運営の代行・サポート、多言語Webハウスガイドなどオーナー向けツールの制作、清掃スタッフの募集情報を掲載しています。">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&family=Zen+Kaku+Gothic+New:wght@300;400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
 
-    <!-- Header Navigation -->
     <header class="header" id="header">
         <div class="header-container">
-            <h1 class="logo"><a href="#top">Melglobe</a></h1>
-            <nav class="nav">
+            <h1 class="logo"><a href="index.html#top">Melglobe</a></h1>
+            <button class="nav-toggle" id="navToggle" aria-label="メニュー" aria-expanded="false"><span></span><span></span><span></span></button>
+            <nav class="nav" id="nav">
                 <ul class="nav-list">
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#recruit">Recruit</a></li>
-                    <li><a href="#company">Company</a></li>
-                    <li><a href="#contact" class="btn-contact-nav">Contact</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="management.html">Management</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="index.html#recruit">Recruit</a></li>
+                    <li><a href="index.html#company">Company</a></li>
+                    <li><a href="index.html#contact" class="btn-contact-nav">Contact</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- Top (Hero Section) -->
     <section id="top" class="hero">
         <div class="hero-bg" style="background-image: url('images/hero_bg.png');"></div>
         <div class="hero-overlay"></div>
@@ -39,7 +40,6 @@
         </div>
     </section>
 
-    <!-- Services Section -->
     <section id="services" class="section bg-light">
         <div class="container section-inner">
             <div class="section-header fade-in-up">
@@ -47,26 +47,44 @@
                 <h2 class="section-ja">事業内容</h2>
                 <div class="section-line"></div>
             </div>
-            
+
             <div class="service-content">
                 <div class="service-text fade-in-up">
-                    <h3 class="service-title">心温まる民泊の運営</h3>
+                    <h3 class="service-title">民泊を「運営する・支える・伝える」</h3>
                     <p class="service-desc">
-                        合同会社Melglobeは、日本の伝統的な温かみとモダンな快適さを融合させた宿泊施設を運営しています。<br><br>
-                        当社の物件では、国内外から訪れる全てのゲストが「第二の我が家」のように安らげる空間づくりを追求しており、細部にまでこだわったホスピタリティを提供しています。
+                        合同会社Melglobeは、自社で民泊を運営しながら、その現場で磨いたノウハウを、ほかのオーナー様の運営支援や、ゲスト向けツールの制作に活かしています。<br><br>
+                        国内外から訪れるゲストが「第二の我が家」のように安らげること。オーナー様の手間が減り、物件の魅力がきちんと伝わること。その両方を大切にしています。
                     </p>
                 </div>
                 <div class="service-image-wrapper fade-in-up delay-1">
                     <div class="image-glass-effect">
-                         <!-- Hero image is reused or maybe just keep it abstract -->
                          <img src="images/hero_bg.png" alt="民泊の内観" class="service-image">
                     </div>
+                </div>
+            </div>
+
+            <div class="pillar-grid">
+                <div class="pillar fade-in-up">
+                    <span class="pillar-num">01</span>
+                    <h4 class="pillar-title">民泊の運営</h4>
+                    <p class="pillar-desc">日本の温かみとモダンな快適さを大切にした宿泊施設を、自社で運営しています。細部までこだわった清掃とホスピタリティで、ゲストをお迎えします。</p>
+                </div>
+                <div class="pillar fade-in-up delay-1">
+                    <span class="pillar-num">02</span>
+                    <h4 class="pillar-title">民泊運営の代行・サポート</h4>
+                    <p class="pillar-desc">ゲスト対応、清掃の手配、価格の調整まで。オーナー様の関わり方に合わせて選べる2つのプランで、日々の運営をお引き受けします。</p>
+                    <a href="management.html" class="pillar-link">プランを見る →</a>
+                </div>
+                <div class="pillar fade-in-up delay-2">
+                    <span class="pillar-num">03</span>
+                    <h4 class="pillar-title">民泊オーナー向けツール制作</h4>
+                    <p class="pillar-desc">ゲストが迷わない多言語の「Webハウスガイド」など、問い合わせを減らし、滞在の満足度を上げるツールを制作します。運営者本人がつくるから、現場で本当に使えます。</p>
+                    <a href="products.html" class="pillar-link">デモを見る →</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Recruit Section -->
     <section id="recruit" class="section bg-brown text-white">
         <div class="container section-inner">
             <div class="section-header fade-in-up">
@@ -74,13 +92,13 @@
                 <h2 class="section-ja">採用情報</h2>
                 <div class="section-line line-light"></div>
             </div>
-            
+
             <div class="recruit-content">
                 <div class="recruit-image fade-in-up">
                     <img src="images/hygiene_care.png" alt="清掃とおもてなし" class="rounded-image shadow-lg">
                 </div>
                 <div class="recruit-text fade-in-up delay-1">
-                    <h3 class="recruit-title">清掃スタッフ・運営サポーター募集</h3>
+                    <h3 class="recruit-title">清掃スタッフ募集</h3>
                     <p class="recruit-message">
                         ゲストに最高の空間をお届けするため、共に施設を磨いてくれる仲間を募集しています。未経験の方でも、丁寧なマニュアルとサポートをご用意しています。
                     </p>
@@ -90,10 +108,12 @@
                             <dd>チェックアウト後の客室清掃、リネン交換、備品補充</dd>
                             <dt>求める人材</dt>
                             <dd>丁寧に作業ができる方、ホスピタリティを大切にできる方</dd>
-                            <dt>勤務時間</dt>
-                            <dd>10:00〜15:00（週1日〜応相談）</dd>
-                            <dt>給与・待遇</dt>
-                            <dd>時給 1,200円〜（交通費支給）</dd>
+                            <dt>契約形態</dt>
+                            <dd>業務委託（1物件ごとの報酬制）</dd>
+                            <dt>稼働の目安</dt>
+                            <dd>チェックアウト後からチェックイン前までの日中（10:00〜15:00ごろ）／週1日〜応相談</dd>
+                            <dt>報酬</dt>
+                            <dd>物件の広さにより異なります。清掃1回あたり2〜3時間が目安で、<strong>時給に換算すると2,500〜3,000円ほど</strong>です。</dd>
                         </dl>
                     </div>
                     <div class="recruit-action">
@@ -104,7 +124,6 @@
         </div>
     </section>
 
-    <!-- Company Section -->
     <section id="company" class="section bg-light">
         <div class="container section-inner">
             <div class="section-header fade-in-up">
@@ -121,21 +140,15 @@
                             <td>合同会社Melglobe (Melglobe LLC)</td>
                         </tr>
                         <tr>
-                            <th>設立</th>
-                            <td>2026年</td>
-                        </tr>
-                        <tr>
                             <th>事業内容</th>
-                            <td>旅館業法に基づく民泊事業の運営・管理</td>
+                            <td>民泊（宿泊施設）の運営<br>民泊運営の代行・サポート<br>民泊オーナー向けツールの制作（多言語Webハウスガイド ほか）</td>
                         </tr>
-
                     </tbody>
                 </table>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contact" class="section bg-white">
         <div class="container section-inner text-center">
             <div class="section-header fade-in-up">
@@ -143,7 +156,7 @@
                 <h2 class="section-ja">お問い合わせ・応募</h2>
                 <div class="section-line center-line"></div>
             </div>
-            
+
             <div class="contact-box fade-in-up delay-1">
                 <div class="contact-icon">
                     <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
@@ -152,73 +165,30 @@
                     </svg>
                 </div>
                 <p class="contact-text">
-                    宿泊に関するお問い合わせ、または採用へのご応募は<br>安全なGoogleフォームより承っております。<br>
-                    以下のボタンよりお進みください。
+                    運営代行・ハウスガイド制作のご相談、宿泊に関するお問い合わせ、<br>清掃スタッフへのご応募は、以下のフォームより承っております。
                 </p>
-                <a href="#" class="btn-primary btn-large glow-effect" target="_blank" rel="noopener noreferrer">
+                <a href="#" id="contactFormLink" class="btn-primary btn-large glow-effect" target="_blank" rel="noopener noreferrer">
                     お問い合わせ・応募フォームへ
                 </a>
-                <p class="contact-note">※別ウィンドウでGoogleフォームが開きます</p>
+                <p class="contact-note">※別ウィンドウでフォームが開きます</p>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
     <footer class="footer">
         <div class="container">
+            <ul class="footer-links">
+                <li><a href="index.html#services">事業内容</a></li>
+                <li><a href="management.html">民泊運営代行</a></li>
+                <li><a href="products.html">ハウスガイド制作</a></li>
+                <li><a href="index.html#recruit">採用情報</a></li>
+                <li><a href="index.html#contact">お問い合わせ</a></li>
+            </ul>
             <p class="copyright">&copy; 2026 Melglobe LLC. All Rights Reserved.</p>
+            <p class="footer-mini"><a href="company-info.html">会社情報</a></p>
         </div>
     </footer>
 
-    <!-- Scripts -->
-    <script>
-        // Header Scroll Effect
-        window.addEventListener('scroll', () => {
-            const header = document.getElementById('header');
-            if (window.scrollY > 50) {
-                header.classList.add('scrolled');
-            } else {
-                header.classList.remove('scrolled');
-            }
-        });
-
-        // Smooth Scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href');
-                if (targetId === '#') return;
-                const targetElement = document.querySelector(targetId);
-                const headerOffset = 80;
-                const elementPosition = targetElement.getBoundingClientRect().top;
-                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
-
-                window.scrollTo({
-                    top: offsetPosition,
-                    behavior: "smooth"
-                });
-            });
-        });
-
-        // Intersection Observer for Scroll Animations
-        const observerOptions = {
-            root: null,
-            rootMargin: '0px',
-            threshold: 0.15
-        };
-
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.fade-in-up').forEach((el) => {
-            observer.observe(el);
-        });
-    </script>
+    <script src="site.js?v=2"></script>
 </body>
 </html>
