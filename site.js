@@ -37,6 +37,11 @@
     });
   });
 
+  // Remember the language the visitor picked
+  document.querySelectorAll('.lang-switch a[data-lang]').forEach(function (a) {
+    a.addEventListener('click', function () { try { localStorage.setItem('melglobe-lang', a.getAttribute('data-lang')); } catch (e) {} });
+  });
+
   // Fade-in on scroll
   var io = new IntersectionObserver(function (entries, obs) {
     entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('visible'); obs.unobserve(en.target); } });

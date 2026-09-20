@@ -829,3 +829,23 @@ section[id]{ scroll-margin-top: 80px; }
   .compare th, .compare td{ padding:13px 12px; font-size:.86rem; }
   .compare{ min-width:560px; }
 }
+
+/* ===== 2026-09-20: language switch / circle-only compare / zh font ===== */
+html[lang="zh-CN"] body, html[lang="zh-CN"] h2.section-ja, html[lang="zh-CN"] .page-title, html[lang="zh-CN"] .service-title{ font-family:'Noto Sans SC', var(--font-ja); }
+html[lang="en"] body{ letter-spacing:.02em; }
+html[lang="en"] .hero-subtitle{ letter-spacing:.06em; }
+.lang-switch{ display:flex; align-items:center; gap:2px; margin-left:4px; padding-left:18px; border-left:1px solid rgba(255,255,255,.35); }
+.header.scrolled .lang-switch{ border-left-color:rgba(62,48,40,.18); }
+.nav-list .lang-switch a{ font-size:.78rem; padding:3px 7px; border-radius:12px; opacity:.75; }
+.nav-list .lang-switch a::after{ display:none; }
+.nav-list .lang-switch a.active{ opacity:1; background:rgba(255,255,255,.22); }
+.header.scrolled .nav-list .lang-switch a.active{ background:rgba(138,100,74,.14); color:var(--color-primary); }
+.compare td .circle{ color:var(--color-primary); font-size:1.05rem; }
+.compare td .dash{ color:#cfc7c1; }
+.compare tbody tr td.no{ background:transparent; }
+.page-hero .stat-row{ margin-top:40px; }
+@media (max-width: 768px){
+  .lang-switch{ border-left:none; padding-left:0; margin:10px 0 0; gap:8px; }
+  .nav-list .lang-switch a{ font-size:.95rem !important; padding:6px 14px; border:1px solid rgba(138,100,74,.3); opacity:1; }
+  .nav-list .lang-switch a.active{ background:var(--color-primary); color:#fff !important; border-color:var(--color-primary); }
+}
