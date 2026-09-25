@@ -909,3 +909,7 @@ html[lang="en"] .hg-pat-title{ font-family:var(--font-en); font-weight:400; }
   .hg-btns .btn-primary, .hg-btns .btn-inverse{ width:100%; }
   .hg-no{ font-size:2.6rem; } .hg-pat-title{ font-size:1.3rem; }
 }
+
+/* 2026-09-25: option descriptions / hosting-fee note */
+.option-dl dt small{ display:block; margin-top:3px; font-size:.78rem; color:var(--color-text-muted); line-height:1.7; }
+.price-list li small{ display:block; margin-top:2px; font-size:.78rem; color:var(--color-text-muted); line-height:1.7; }
