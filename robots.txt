@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://melglobe.com/sitemap.xml
