@@ -42,6 +42,22 @@
     a.addEventListener('click', function () { try { localStorage.setItem('melglobe-lang', a.getAttribute('data-lang')); } catch (e) {} });
   });
 
+  // Photo gallery lightbox
+  var lb = document.getElementById('phLb');
+  if (lb) {
+    var lbImg = lb.querySelector('img'), lbCap = lb.querySelector('p');
+    var closeLb = function () { lb.hidden = true; lbImg.src = ''; document.body.style.overflow = ''; };
+    document.querySelectorAll('.ph-item a').forEach(function (a) {
+      a.addEventListener('click', function (e) {
+        e.preventDefault();
+        lbImg.src = a.getAttribute('href'); lbImg.alt = a.getAttribute('data-cap') || ''; lbCap.textContent = a.getAttribute('data-cap') || '';
+        lb.hidden = false; document.body.style.overflow = 'hidden';
+      });
+    });
+    lb.addEventListener('click', function (e) { if (e.target !== lbImg) closeLb(); });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !lb.hidden) closeLb(); });
+  }
+
   // Fade-in on scroll
   var io = new IntersectionObserver(function (entries, obs) {
     entries.forEach(function (en) { if (en.isIntersecting) { en.target.classList.add('visible'); obs.unobserve(en.target); } });
